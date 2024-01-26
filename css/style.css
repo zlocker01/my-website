@@ -1,0 +1,211 @@
+:root {
+  --fira-mono: "Fira Mono", monospace;
+  --Negro: #000000;
+  --Azul: #18558b;
+  --Amarillo: #fca311;
+  --Gris: #e5e5e5d9;
+  --Blanco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fira-mono);
+  background-color: var(--Negro);
+}
+
+.titulo, .enfasis {
+  color: var(--Amarillo);
+}
+
+/* navbar */
+.navbar {
+  background-color: var(--Negro);
+}
+
+.navbar-brand {
+  color: var(--Amarillo);
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: var(--Amarillo);
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  background: var(--Azul);
+  color: var(--Blanco);
+}
+
+.navbar-brand:hover {
+  color: var(--Azul);
+}
+
+/* sobre mi */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imagenes/pexels-photo-943096_2_11zon.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.fondo__cta {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imagenes/background.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 6.25rem 0;
+}
+
+.fondo__cta-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imagenes/background-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 6.25rem 0;
+}
+
+.yo__contenedor {
+  margin-top: 100px;
+}
+
+.yo {
+  border-radius: 50%;
+  max-width: 50vw;
+  max-height: 50vh;
+}
+
+.fa-solid,
+.hero__text {
+  color: var(--Blanco);
+}
+
+/* proyectos */
+.card {
+  background-color: var(--Gris);
+  color: var(--Negro);
+}
+
+.list-group-item {
+  background-color: var(--Gris);
+}
+
+.accordion-button--2 {
+  background-color: var(--Negro);
+}
+
+.btn {
+  background-color: var(--Azul);
+  border: none;
+  color: var(--Blanco);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.375);
+  font-size: 12px;
+}
+
+.precio {
+  background-color: var(--Azul);
+  border-style: double;
+  border-color: var(--Blanco);
+  color: white;
+}
+
+.btn:hover {
+  color: var(--Azul);
+  background-color: var(--Amarillo);
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.card-text {
+  font-weight: 100;
+  font-size: 11px;
+}
+
+/* testimonos */
+.carousel-inner {
+  background-color: var(--Gris);
+  border-radius: 5px;
+  color: var(--Negro);
+}
+
+.carousel-item {
+  padding: 15px 0;
+}
+
+.fa-quote-left {
+  color: var(--Azul);
+}
+
+.cliente {
+  border-radius: 50%;
+  max-height: 20vh;
+}
+
+/* contactos */
+.contacto {
+  overflow-x: hidden;
+}
+
+.redes__sociales {
+  color: var(--Azul);
+}
+
+.fa-github:hover {
+  color: var(--Amarillo);
+}
+
+.fa-envelope:hover {
+  color: var(--Amarillo);
+}
+
+.fa-linkedin:hover {
+  color: var(--Amarillo);
+}
+
+.fa-whatsapp:hover {
+  color: var(--Amarillo);
+}
+
+/* footer */
+.footer {
+  background-color: var(--Azul);
+  padding: 10px;
+  color: var(--Blanco);
+}
+
+.p__footer {
+  margin-top: 15px;
+}
+
+/* boton flotante whatsapp */
+.sticky a {
+  position: fixed;
+  bottom: 1.25rem;
+  /*Ajustaestapropiedadparacontrolarladistanciadesdelaparteinferior*/
+  right: 20px;
+  /*Ajustaestapropiedadparacontrolarladistanciadesdeladerecha*/
+  z-index: 1000;
+  /*Ajustaestapropiedadsiesnecesarioparacontrolarelordendeapilamiento*/
+  background-color: #08AA5D;
+  text-decoration-line: none;
+  -moz-text-decoration-line: none;
+  color: #ffffff;
+  padding: 0rem 1.25rem;
+  border-radius: 6.25rem;
+  height: 4.375rem;
+  padding-top: 0.625rem;
+  font-weight: 800;
+}
+.sticky a:hover {
+  background-color: #03773f;
+}
